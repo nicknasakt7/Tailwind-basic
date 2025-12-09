@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../public/images/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Animation</title>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <a href="../index.html"
+        class="fixed top-4 left-4 bg-white text-purple-500 px-4 py-2 rounded-lg shadow-lg hover:-translate-x-1">Back</a>
+
+    <!-- container -->
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow mt-10 p-8">
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Spin (หมุน)</h2>
+
+            <div class="flex gap-8 bg-gray-200 p-8 rounded-lg item-center justify-center">
+                <!-- content -->
+                <div class="animate-spin w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full">
+                </div>
+                <p>animate-spin หมุนรอบ 360องศา</p>
+            </div>
+
+        </section>
+        <!-- ping -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Ping (ระลอก)</h2>
+
+            <div class="flex gap-8 bg-gray-200 p-8 rounded-lg item-center justify-center">
+                <!-- content -->
+                <div class="relative">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full"></div>
+                    <div class="animate-ping absolute top-0 w-16 h-16 bg-purple-500 rounded-full opacity-75"></div>   
+                </div>
+                <p>animate-ping - คลื่นกระจายออกไปเป็นวง </p>
+            </div>
+
+        </section>
+
+        <!-- pulse -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Pulse (จาง)</h2>
+
+            <div class="flex gap-8 bg-gray-200 p-8 rounded-lg item-center justify-center">
+                <!-- content -->
+               <div class="animate-pulse w-16 h-16 bg-green-500 rounded-lg"></div>
+                <p>animate-pulse-เรืองแสงเบา ๆ แล้วหรี่ลง สลับไปเรื่อย ๆ</p>
+            </div>
+
+        </section>
+
+        <!-- bounce -->
+    
+    <section>
+            <h2 class="text-2xl font-bold mb-4">Bounce (เด้ง)</h2>
+
+            <div class="flex gap-8 bg-gray-200 p-8 rounded-lg item-center justify-center">
+                <!-- content -->
+               <div class="animate-bounce w-16 h-16 bg-red-500 rounded-full"></div>
+                <p>animate-bounce เด้ง</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
